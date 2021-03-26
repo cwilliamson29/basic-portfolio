@@ -83,21 +83,25 @@ header {
     background-color: pink;
     
 }
-#mainWrap{
-    width: 100%;
-    height:50%;
-    position: relative;
-    display: flex;
-}
+
 
 main{
     width: 100%;
-    min-height: 100vh;
+    /*height: 50vh;*/
+    max-height: 100vh;
     padding-top: 75px;
+    
+}
+#mainWrap{
+    width: 100%;
+    height:50vh;
     display: flex;
     flex-wrap: wrap;
+    vertical-align: middle;
     justify-content: center;
-    align-items: center;
+    justify-items: left;
+    align-items:center;
+    
 }
 #rightBox{
     order: 2;
@@ -117,4 +121,25 @@ main{
 }
 #rightBox p{
     font-size: 1.8em;
+}
+#mainWrap2{
+    display: flex;
+    order:3;
+    width: 100%;
+    background-color: white;
+    justify-content:center;
+    align-items: middle;
+}
+#aboutMe{
+    padding: 2%;
+    order: 1;
+    width: 60%;
+}
+#aboutMe h2{
+    font-size: 3em;
+    font-family: changoregular;
+}
+#aboutMe p{
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
